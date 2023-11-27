@@ -1,0 +1,35 @@
+/* CUSTOM STYLES */
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* remove scroll bounce */
+body {
+  overscroll-behavior: none;
+}
+
+/* prevent horizontal scroll */
+.page_wrap {
+  overflow: clip;
+}
+
+/* flex: reverse direction */
+[reverse-direction="true"] {
+  flex-direction: row-reverse;
+}
+
+/* btn small */
+[btn-main-small="true"] {
+  padding: 0.6rem 1rem;
+}
+
+/* btn hovers */
+@media (pointer: fine) {
+  a:hover [btn-main="icon"] {
+    transform: translateX(0.2rem);
+  }
+  a:hover [btn-play="base"] {
+    transform: scale(1.1);
+  }
+}
